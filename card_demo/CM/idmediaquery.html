@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idmedia</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .circle{
+            background-color: darkcyan;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .image{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-top: -30px;
+            margin-bottom: 10px;
+            border: 2px solid white;
+        }
+        .card{
+
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .section1{
+            background-image: url("card.svg");
+            height: 100px;
+            background-size: cover;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .section2{
+            height: 120px;
+        }
+         .section3{
+             display: grid;
+             grid-template-columns: auto auto auto;
+             grid-template-rows: 60px;
+             justify-content: space-around;
+             grid-gap: 6px;
+             padding-top: 20px;
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             border-top: 1px solid black;
+	     
+         }
+         .name{
+             font-size: 18px;
+             margin-top: 10px;
+         }
+         .age{
+             font-weight: 500;
+             opacity: 0.5;
+         }
+         .place{
+             font-weight: 500;
+             opacity: 0.6;
+             margin-top: 10px;
+         }
+         .item h5{
+             font-weight: 500;
+             opacity: 0.6;
+         }
+         .leftcircle{
+             position: absolute;
+             top:0;
+             transform: translate(-75%,-50%);
+
+
+         }
+          .rightcircle{
+             position: absolute;
+             bottom: 0;
+              transform: translate(75%,50%);
+
+         }
+          @media screen and (max-width: 720px){
+              .leftcircle{
+                  transform: translate(-65%,-50%);
+              }
+              .rightcircle{
+                  transform: translate(65%,50%);
+              }
+              .card{
+
+                  width: 250px;
+                  height: 250px;
+              }
+              .section1{
+                  height: 80px;
+
+              }
+              .section2{
+                  height: 90px;
+              }
+              .name{
+                  font-size: 15px;
+                  margin-top: 5px;
+              }
+              .place{
+                  margin-top: 5px;
+                  font-size: 12px;
+              }
+              .item h5{
+                  font-size: 12px;
+              }
+          }
+        @media screen and (min-width: 320px){
+            .leftcircle{
+                transform: translate(-35%,-80%);
+            }
+            .rightcircle{
+                transform: translate(35%,80%);
+            }
+            .card{
+
+                width: 200px;
+                height: 200px;
+            }
+            .image{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-top: -15px;
+                margin-bottom: 5px;
+                border: 2px solid white;
+            }
+            .section1{
+                height: 50px;
+
+            }
+            .section2{
+                height: 60px;
+            }
+            .name{
+                font-size: 10px;
+                margin-top: 3px;
+            }
+            .place{
+                margin-top: 3px;
+                font-size: 8px;
+            }
+            .item h4{
+                font-size: 9px;
+            }
+            .item h5{
+                font-size: 8px;
+            }
+            .item{
+                padding-bottom: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section class="circle">
+
+        <img class="leftcircle" src="leftcircle.svg">
+
+        <img class="rightcircle" src="rightcircle.svg">
+
+    <div class="card">
+        <div class="section1">
+
+        </div>
+        <div class="section2">
+            <div><img class="image" src="victor.jpg"></div>
+            <h2 class="name">VictorCrest <span class="age">26</span></h2>
+            <h3 class="place">London</h3>
+
+        </div>
+        <div class="section3">
+            <div class="item">
+                <h4 class="number">803k</h4>
+                <h5>Likes</h5>
+            </div>
+
+            <div class="item">
+                <h4 class="number">80k</h4>
+                <h5>Followers</h5>
+            </div>
+
+            <div class="item">
+                <h4 class="number">1.4k</h4>
+                <h5>Photos</h5>
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>        

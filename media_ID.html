@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media_CARD</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		section.circle{
+
+			background-color: rgb(25,144,165);
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			position: relative;
+			overflow: hide
+
+		}
+
+		img.leftside{
+
+				position: absolute;
+				bottom: -750px;
+				right: -200px;
+				width:750px;
+				border-radius:1000px;
+				margin-top: 500px;
+				padding-bottom: 300px;
+				opacity: 20px;
+				opacity: 0.2;
+
+
+		}
+		img.rightside{
+			position: absolute;
+			bottom: 350px;
+			left: -500px;
+			right: 300px;
+			margin-top: 300px;
+			border-radius: 500px;
+			width: 1000px;
+			opacity: 0.2;
+		}		
+		div.card{
+		 height: 300px;
+		 width: 270px;
+		 border-radius: 20px;
+		 position: relative;
+		 background-color: white;
+		 text-align: center;
+		 margin-top:150px;
+
+		}
+		div.section1{
+			background-image: url('card.jpeg');
+			height: 100px;
+			background-size: cover;
+			border-top-left-radius:20px;
+			border-top-right-radius: 20px;
+		}
+		div.section2{
+			height: 120px;
+
+		}
+		img.creta{
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+			margin-top: -40px;
+			margin-bottom: 10px;
+			border:2px solid white;
+		}
+		h4.name{
+
+			font-family: calibri;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		span.age{
+			font-family: calibri;
+			font-weight: 500px;
+			opacity: 0.5;
+		}
+		h5.place{
+			font-family: calibri;
+			font-weight: 500px;
+			margin-top: 5px;
+		}
+
+		/*
+		Grid_Propert USed*/
+		
+		div.section3{
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: 50px;
+			justify-content: space-around;
+			grid-gap: 0px;
+			padding-top: 15px;
+			margin-top: 10px;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			border-top:1px solid lightgray;
+
+
+		}
+		div.content{
+			font-family: caliibri;
+			font-weight: 500px;
+			opacity: 0.7;
+
+		}
+		h4.values{
+			font-family: calibri;
+			font-size: 16px;
+
+		}
+		@media (min-width: 360px) and   (max-width: 640px)  {
+			img.leftside{
+				top: 1000px;
+
+			}
+			section.circle{
+				display: flex;
+
+			}
+			img.rightside{
+				display: flex;
+				top: 40px;
+				bottom: 90px;
+			}
+			div.card{
+				margin-top: 1000px;
+				margin-left: 100px;
+				padding-right: 1000px;
+				align-items: center;
+
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+<section class="circle">
+	<img src="leftside.jpeg" class="leftside">
+	<img src="rightside.jpeg" class="rightside">
+	<div class="card">
+			<div class="section1">
+			</div>
+			<div class="section2">
+				<div>
+					<img src="creta.jpeg" class="creta">
+					<h4 class="name">Vector Crest<span class="age">  26</span></h4>
+					<h5 class="place">London</h5>
+				</div>
+			</div>
+			<div class="section3">
+				<div class="content">
+					<h4 class="values">80k</h4>
+					<h5>Followers</h5>
+				</div>
+				<div class="content">
+					<h4 class="values">803k</h4>
+					<h5>Likes</h5>
+				</div>
+				<div class="content">
+					<h4 class="values">1.4k</h4>
+					<h5>Photos</h5>
+				</div>
+			</div>
+
+	</div>
+
+
+</section>
+
+
+</body>
+</html>
